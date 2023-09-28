@@ -17,6 +17,7 @@ else:
 
 computer_random_number = random.randint(1, 3)
 computer_move = ''
+
 if computer_random_number == 1:
     computer_move = rock
 elif computer_random_number == 2:
@@ -24,6 +25,7 @@ elif computer_random_number == 2:
 elif computer_random_number == 3:
     computer_move = scissors
 print(f'The computer chois {computer_move}')
+
 if (player_move == rock and computer_move == scissors) or\
         (player_move == paper and computer_move == rock) or\
         (player_move == scissors and computer_move == rock):
